@@ -1,0 +1,49 @@
+#process {
+  padding: 20px 30px;
+  border-radius: 44px;
+  height: 1000px;
+}
+#process h3 {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+#process .lavel-box {
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+  border: 5px solid #ff6b35;
+  transform: translateY(-60px);
+}
+#process .lavel-box h3 {
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#process-p .p-svg {
+  transform: translateY(-70px);
+  position: relative;
+}
+
+#process-p .p-svg img {
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 18px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#process .dash-border {
+}
