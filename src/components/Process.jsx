@@ -20,7 +20,7 @@ export default function Process() {
             <ProcessPercent />
           </div>
           <div className="dash-border">
-            <img src="/assets/line.svg" alt="" />
+            <img src="/assets/line.svg" className="img-fluid" alt="" />
           </div>
         </div>
         <div>

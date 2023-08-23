@@ -34,6 +34,15 @@
   display: inline-block;
 }
 
+@media only screen and (max-width: 1399px) {
+  .nav-list li a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 600 !important;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+  }
+}
 @media only screen and (max-width: 991px) {
   .connect-btn {
     font-size: 14px;

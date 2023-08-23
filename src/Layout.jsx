@@ -10,11 +10,13 @@ export default function Layout() {
       </div>
 
       <div className=" container">
-        <div className="row mt-4">
-          <div className="col-8"></div>
-          <div className="col-4">
-            {" "}
-            <Process />
+        <div className="d-none d-xl-block">
+          <div className="row mt-4">
+            <div className="col-xl-6"></div>
+            <div className="col-xl-6 d-flex justify-content-end">
+              {" "}
+              <Process />
+            </div>
           </div>
         </div>
       </div>
