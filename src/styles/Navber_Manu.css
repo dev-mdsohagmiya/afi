@@ -38,23 +38,24 @@
 }
 .profile .profile-manu {
   background-color: #1e1e1e;
-  color: white !important;
+  border: 1px solid #fff;
+  color: #1e1e1e;
   position: absolute;
   top: 60px;
-  right: 30px;
+  right: 70px;
   border-radius: 5px;
-  z-index: auto;
   overflow: hidden;
   width: 0;
   height: 0;
+  z-index: 20;
   transition: transform ease-in-out 0.5s;
-  transform: scale(0.5); /* Initial state */
+  transform: scale(0.5); /* Scale up on hover */
 }
 
 .profile .profile-toggle {
   width: 170px;
-  height: 120px;
-  padding: 20px 2px;
+  height: 100px;
+  padding: 15px 2px;
   transition: transform ease-in-out 0.5s;
   transform: scale(1.2); /* Scale up on hover */
 }
@@ -76,7 +77,6 @@
   top: 60px;
   right: 30px;
   border-radius: 5px;
-  z-index: auto;
   overflow: hidden;
   width: 0;
   height: 0;
@@ -86,8 +86,8 @@
 
 .lang .lang-toggle {
   width: 170px;
-  height: 120px;
-  padding: 20px 2px;
+  height: 75px;
+  padding: 15px 2px;
   transition: transform ease-in-out 0.5s;
   transform: scale(1.2); /* Scale up on hover */
 }
@@ -98,6 +98,9 @@
   font-size: 13px;
 }
 
+.lang .pointer {
+  cursor: pointer;
+}
 @media only screen and (max-width: 1399px) {
   .profile {
     transform: translateY(-4px);
@@ -116,10 +119,6 @@
   }
 }
 @media only screen and (max-width: 991px) {
-  .connect-btn {
-    font-size: 14px;
-    padding: 5px 20px;
-  }
   .nav-list li {
     font-size: 14px;
     margin-left: 15px;
@@ -146,13 +145,48 @@
   width: 60px;
   height: 60px;
 }
+.profile svg {
+  height: 28px;
+  height: 28px;
+}
+.lang .flag {
+  height: 35px;
+  width: 28px;
+}
+
 @media only screen and (max-width: 767px) {
+  .lang .flag {
+    height: 37px;
+    width: 32px;
+  }
   .nav-list {
     margin-top: 5px;
   }
-  .connect-btn {
-    font-size: 15px;
-    padding: 5px 20px;
+  .profile svg {
+    height: 30px;
+    height: 30px;
+  }
+  .nav-list li {
+    margin-left: 0px;
+    list-style: none;
+    font-weight: 600 !important;
+  }
+  #toggle-btn {
+    border: 1px solid black;
+    padding: 2px 2px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+  .profile .profile-manu .link {
+    color: white !important;
+    padding: 2px 2px;
+    font-size: 11px;
+  }
+  .lang .lang-manu .link {
+    color: white !important;
+    padding: 2px 2px;
+    font-size: 11px;
   }
 }
 

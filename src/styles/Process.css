@@ -2,6 +2,12 @@
   padding: 20px 30px;
   border-radius: 44px;
   width: 500px;
+  margin-top: 50px;
+  position: relative;
+}
+#process .div-lavel-box {
+  z-index: -10;
+  position: relative;
 }
 #process h3 {
   color: #000;
@@ -18,8 +24,10 @@
   height: 110px;
   border-radius: 55px;
   border: 5px solid #ff6b35;
-  transform: translateY(-60px);
+  position: absolute;
+  top: -20px;
 }
+
 #process .lavel-box h3 {
   color: #000;
   text-align: center;
@@ -28,6 +36,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+#process-p {
+  margin-top: 80px;
 }
 
 #process-p .p-svg {
@@ -45,13 +56,24 @@
   margin: auto;
 }
 
-#process .dash-border {
-}
-
 @media only screen and (max-width: 1399px) {
   #process {
     padding: 20px 30px;
     border-radius: 44px;
     width: 400px;
+    margin-top: 75px;
+  }
+  #process-p {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #process {
+    padding: 10px 10px;
+    border-radius: 44px;
+    width: 100% !important;
+    margin-top: 35px;
+    position: relative;
   }
 }

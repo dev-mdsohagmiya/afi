@@ -7,13 +7,13 @@ export default function Process() {
     <div id="process">
       <div className="">
         <div>
-          <div>
-            {" "}
+          <div className="div-lavel-box">
             <h3>Progression</h3>
-          </div>
-          <div className="d-flex justify-content-end">
-            <div className="lavel-box d-flex justify-content-center align-items-center">
-              <h3>Niv. 1</h3>
+
+            <div className="d-flex justify-content-end">
+              <div className="lavel-box d-flex justify-content-center align-items-center">
+                <h3>Niv. 1</h3>
+              </div>
             </div>
           </div>
           <div>

@@ -8,7 +8,7 @@ export default function DailyGoals() {
         <div>
           <h3 className="h3-1">Objectif quotidiens :</h3>
           <div className="hours">
-            <small>Réviser 1h par jours</small>
+            <small>Objectif quotidien</small>
             <div className="progress">
               <div
                 className="progress-bar"

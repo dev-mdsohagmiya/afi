@@ -19,6 +19,11 @@ export default function Layout() {
             </div>
           </div>
         </div>
+        <div className="d-block d-xl-none">
+          <div className="d-flex justify-content-end">
+            <Process />
+          </div>
+        </div>
       </div>
     </div>
   );

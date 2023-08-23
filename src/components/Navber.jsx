@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { Dropdown, NavLink } from "react-bootstrap";
 // import Manu from "./Manu";
@@ -6,7 +6,7 @@ import "../styles/Navber_Manu.css";
 import Manu from "./Manu";
 
 export default function Navber() {
-  const [profileToggle, setProfiletoggle] = useState("");
+  const [profileToggle, setProfileToggle] = useState("");
   const [langToggle, setLangToggle] = useState("");
 
   const [toggle, setToggle] = useState("");
@@ -15,7 +15,10 @@ export default function Navber() {
     if (toggle === "toggler-class") {
       setToggle("remove-toggle");
     }
+    setProfileToggle("");
+    setLangToggle("");
   };
+
   const onToggleData = (data) => {
     setToggle(data);
   };
@@ -26,16 +29,16 @@ export default function Navber() {
       setLangToggle("");
     }
     if (profileToggle === "profile-toggle") {
-      setProfiletoggle("");
+      setProfileToggle("");
     } else {
-      setProfiletoggle("profile-toggle");
+      setProfileToggle("profile-toggle");
     }
   };
 
   const langClickHandler = () => {
     console.log("lang");
     if (profileToggle === "profile-toggle") {
-      setProfiletoggle("");
+      setProfileToggle("");
     }
     if (langToggle === "lang-toggle") {
       setLangToggle("");
@@ -43,8 +46,36 @@ export default function Navber() {
       setLangToggle("lang-toggle");
     }
   };
+
+  const outerContainerRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (
+      outerContainerRef.current &&
+      !outerContainerRef.current.contains(event.target)
+    ) {
+      setProfileToggle("");
+      setLangToggle("");
+    }
+  };
+
+  const handleScroll = () => {
+    setProfileToggle("");
+    setLangToggle("");
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
+    <div ref={outerContainerRef}>
       <div className="container py-4 ">
         <div className="row ">
           <div className="col-1">
@@ -78,7 +109,7 @@ export default function Navber() {
                       className="flag"
                       alt="kigi"
                     />
-                    <span className="ml-2">
+                    <span className="mx-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="13"
@@ -93,7 +124,7 @@ export default function Navber() {
                       </svg>
                     </span>
                   </div>
-                  <div className={`lang-manu  text-center z-1 ${langToggle}`}>
+                  <div className={`lang-manu  text-center  ${langToggle}`}>
                     <div className="">
                       <NavLink onClick={langClickHandler} className="link">
                         ENGLISH (ENG)
@@ -113,8 +144,6 @@ export default function Navber() {
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="47"
-                        height="47"
                         fill="currentColor"
                         class="bi bi-person"
                         viewBox="0 0 16 16"
@@ -123,7 +152,6 @@ export default function Navber() {
                       </svg>
                     </span>
                     <span className="">
-                      {" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="13"
@@ -138,8 +166,9 @@ export default function Navber() {
                       </svg>
                     </span>
                   </span>
+
                   <div
-                    className={`profile-manu  text-center z-1 ${profileToggle}`}
+                    className={`profile-manu  text-center  ${profileToggle}`}
                   >
                     <div className="">
                       <NavLink onClick={profileClickHandler} className="link">
@@ -173,7 +202,7 @@ export default function Navber() {
           </div>
         </div>
       </div>
-      <div className={`manu-toggle ${toggle} z-3`}>
+      <div className={`manu-toggle ${toggle} z-2`}>
         <Manu onToggleData={onToggleData} />
       </div>
     </div>
