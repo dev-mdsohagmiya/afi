@@ -1,0 +1,127 @@
+#blessings {
+  position: relative;
+}
+
+#blessings path {
+  fill: #000;
+}
+
+#blessings h2 {
+  color: black;
+  position: absolute;
+  top: 465px;
+  right: 82px;
+  color: #000;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#blessings .svg-1 {
+  position: absolute;
+  top: 510px;
+  left: 380px;
+}
+
+#blessings .svg-2 {
+  position: absolute;
+  top: 535px;
+  left: 362px;
+}
+
+#blessings .svg-3 {
+  position: absolute;
+  top: 548px;
+  left: 332px;
+}
+
+#blessings .svg-4 {
+  position: absolute;
+  top: 555px;
+  left: 310px;
+}
+
+#blessings .svg-5 {
+  position: absolute;
+  top: 555px;
+  left: 300px;
+}
+
+#blessings .svg-6 {
+  position: absolute;
+  top: 555px;
+  left: 260px;
+}
+
+#blessings .svg-7 {
+  position: absolute;
+  top: 555px;
+  left: 225px;
+}
+
+#blessings .svg-8 {
+  position: absolute;
+  top: 555px;
+  left: 195px;
+}
+
+#blessings .svg-9 {
+  position: absolute;
+  top: 555px;
+  left: 165px;
+}
+
+#blessings .svg-10 {
+  position: absolute;
+  top: 555px;
+  left: 160px;
+}
+
+#blessings .svg-11 {
+  position: absolute;
+  top: 555px;
+  left: 120px;
+}
+
+#blessings .svg-12 {
+  position: absolute;
+  top: 555px;
+  left: 90px;
+}
+
+#blessings .svg-13 {
+  position: absolute;
+  top: 562px;
+  left: 57px;
+}
+
+#blessings .svg-14 {
+  position: absolute;
+  top: 582px;
+  left: 30px;
+}
+
+#blessings .svg-15 {
+  position: absolute;
+  top: 603px;
+  left: -10px;
+}
+
+#blessings .ex h2 {
+  color: black;
+  position: absolute;
+  top: 35px;
+  left: 110px;
+  color: #000;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}

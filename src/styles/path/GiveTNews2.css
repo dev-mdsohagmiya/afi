@@ -1,0 +1,97 @@
+#gt-news2 {
+  position: relative;
+}
+#gt-news2 path {
+  fill: #000;
+}
+#gt-news2 h2 {
+  color: black;
+  position: absolute;
+  top: 285px;
+  left: 105px;
+  color: #000;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#gt-news2 .svg-1 {
+  position: absolute;
+  top: 343px;
+  left: 26px;
+}
+#gt-news2 .svg-2 {
+  position: absolute;
+  top: 363px;
+  left: 54px;
+}
+
+#gt-news2 .svg-3 {
+  position: absolute;
+  position: absolute;
+  top: 373px;
+  left: 88px;
+}
+
+#gt-news2 .svg-4 {
+  position: absolute;
+  top: 373px;
+  left: 120px;
+}
+#gt-news2 .svg-5 {
+  position: absolute;
+  top: 373px;
+  left: 160px;
+}
+
+#gt-news2 .svg-6 {
+  position: absolute;
+  top: 373px;
+  left: 190px;
+}
+
+#gt-news2 .svg-7 {
+  position: absolute;
+  top: 373px;
+  left: 230px;
+}
+
+#gt-news2 .svg-8 {
+  position: absolute;
+  top: 373px;
+  left: 260px;
+}
+
+#gt-news2 .svg-9 {
+  position: absolute;
+  top: 373px;
+  left: 290px;
+}
+
+#gt-news2 .svg-10 {
+  position: absolute;
+  top: 373px;
+  left: 302px;
+}
+
+#gt-news2 .svg-11 {
+  position: absolute;
+  top: 381px;
+  left: 332px;
+}
+
+#gt-news2 .svg-12 {
+  position: absolute;
+  top: 400px;
+  left: 360px;
+}
+
+#gt-news2 .svg-13 {
+  position: absolute;
+  top: 430px;
+  left: 335px;
+}

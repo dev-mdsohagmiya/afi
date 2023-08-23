@@ -1,0 +1,90 @@
+#gtns {
+  position: relative;
+}
+#gtns path {
+  fill: #000;
+}
+#gtns h2 {
+  color: black;
+  position: absolute;
+  top: -70px;
+  left: 155px;
+}
+#gtns h2 a {
+  color: #000;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+#gtns .svg-1 {
+  position: absolute;
+  top: -90px;
+  left: 40px;
+}
+#gtns .svg-2 {
+  position: absolute;
+  left: 88px;
+}
+
+#gtns .svg-3 {
+  position: absolute;
+  left: 106px;
+  top: 15px;
+}
+
+#gtns .svg-4 {
+  position: absolute;
+  left: 136px;
+  top: 18px;
+}
+#gtns .svg-5 {
+  position: absolute;
+  left: 166px;
+  top: 18px;
+}
+
+#gtns .svg-6 {
+  position: absolute;
+  left: 195px;
+  top: 18px;
+}
+
+#gtns .svg-7 {
+  position: absolute;
+  left: 225px;
+  top: 18px;
+}
+
+#gtns .svg-8 {
+  position: absolute;
+  left: 258px;
+  top: 18px;
+}
+
+#gtns .svg-9 {
+  position: absolute;
+  left: 295px;
+  top: 18px;
+}
+
+#gtns .svg-10 {
+  position: absolute;
+  left: 325px;
+  top: 25px;
+}
+
+#gtns .svg-11 {
+  position: absolute;
+  left: 361px;
+  top: 43px;
+}
+
+#gtns .svg-12 {
+  position: absolute;
+  left: 341px;
+  top: 75px;
+}
