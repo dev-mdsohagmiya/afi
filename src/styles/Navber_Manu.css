@@ -47,7 +47,7 @@
   overflow: hidden;
   width: 0;
   height: 0;
-  z-index: 20;
+  z-index: +2;
   transition: transform ease-in-out 0.5s;
   transform: scale(0.5); /* Scale up on hover */
 }
@@ -153,8 +153,30 @@
   height: 35px;
   width: 28px;
 }
-
+.manu-toggle {
+  background-color: #1e1e1e;
+  width: 80%;
+  align-items: center;
+  overflow: hidden;
+  transform: translateX(-100%);
+  transition: transform ease-in-out 0.5s;
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+}
+@media only screen and (max-width: 1199px) {
+  .manu-ber {
+    z-index: 120;
+  }
+}
 @media only screen and (max-width: 767px) {
+  .navber {
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+  }
   .lang .flag {
     height: 37px;
     width: 32px;
@@ -188,18 +210,6 @@
     padding: 2px 2px;
     font-size: 11px;
   }
-}
-
-.manu-toggle {
-  background-color: #1e1e1e;
-  position: absolute;
-  height: 100vh;
-  top: 0px;
-  width: 80%;
-  align-items: center;
-  overflow: hidden;
-  transform: translateX(-100%);
-  transition: transform ease-in-out 0.5s;
 }
 
 .toggler-class {

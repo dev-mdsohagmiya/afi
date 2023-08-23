@@ -1,14 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { Dropdown, NavLink } from "react-bootstrap";
+
 // import Manu from "./Manu";
 import "../styles/Navber_Manu.css";
 import Manu from "./Manu";
+import { useNavigate } from "react-router-dom";
 
 export default function Navber() {
   const [profileToggle, setProfileToggle] = useState("");
   const [langToggle, setLangToggle] = useState("");
-
+  const navigate = useNavigate();
+  const currentPathname = window.location.pathname;
   const [toggle, setToggle] = useState("");
   const handleToggle = () => {
     setToggle("toggler-class");
@@ -64,6 +67,30 @@ export default function Navber() {
     setLangToggle("");
   };
 
+  const handleDashBoard = () => {
+    navigate("/dashboard");
+  };
+
+  const handleProcess = () => {
+    navigate("/process");
+  };
+  const handleNext = () => {
+    navigate("/logout");
+  };
+
+  const handleEnglish = () => {
+    if (!currentPathname.includes("lang?=en")) {
+      navigate(`/lang?=en`);
+    }
+    navigate(`$/lang?=en`);
+  };
+
+  const handleFrench = () => {
+    if (!currentPathname.includes("lang/?=fr")) {
+      navigate(`/lang?=fr`);
+    }
+  };
+
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
     document.addEventListener("scroll", handleScroll);
@@ -75,8 +102,8 @@ export default function Navber() {
   }, []);
 
   return (
-    <div ref={outerContainerRef}>
-      <div className="container py-4 ">
+    <div ref={outerContainerRef} className="navber">
+      <div className="container   py-1 py-xl-4 ">
         <div className="row ">
           <div className="col-1">
             <img className="logo" src="/assets/logo.svg" alt="Logo" />
@@ -126,13 +153,21 @@ export default function Navber() {
                   </div>
                   <div className={`lang-manu  text-center  ${langToggle}`}>
                     <div className="">
-                      <NavLink onClick={langClickHandler} className="link">
+                      <NavLink
+                        to={"/en"}
+                        onClick={handleEnglish}
+                        className="link"
+                      >
                         ENGLISH (ENG)
                       </NavLink>
                     </div>
                     <div>
-                      <NavLink onClick={langClickHandler} className="link">
-                        FRANCH (FR)
+                      <NavLink
+                        to={"/fr"}
+                        onClick={handleFrench}
+                        className="link"
+                      >
+                        FRANÇAIS (FR)
                       </NavLink>
                     </div>
                   </div>
@@ -171,17 +206,21 @@ export default function Navber() {
                     className={`profile-manu  text-center  ${profileToggle}`}
                   >
                     <div className="">
-                      <NavLink onClick={profileClickHandler} className="link">
+                      <NavLink
+                        to={"/dashboard"}
+                        onClick={handleDashBoard}
+                        className="link"
+                      >
                         TABLEAU DE BORD
                       </NavLink>
                     </div>
                     <div>
-                      <NavLink onClick={profileClickHandler} className="link">
+                      <NavLink onClick={handleProcess} className="link">
                         PROGRESSION
                       </NavLink>
                     </div>
                     <div>
-                      <NavLink onClick={profileClickHandler} className="link">
+                      <NavLink onClick={handleNext} className="link">
                         SE DÉCONNECTER
                       </NavLink>
                     </div>
@@ -202,7 +241,7 @@ export default function Navber() {
           </div>
         </div>
       </div>
-      <div className={`manu-toggle ${toggle} z-2`}>
+      <div className={`manu-toggle ${toggle} manu-ber`}>
         <Manu onToggleData={onToggleData} />
       </div>
     </div>

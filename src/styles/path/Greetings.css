@@ -1,5 +1,6 @@
 #gtns {
   position: relative;
+  z-index: 1;
 }
 #gtns path {
   fill: #000;
