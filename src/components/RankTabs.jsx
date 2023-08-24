@@ -35,7 +35,7 @@ export default function RankTabs() {
       <h3>Classement de la semaine EN BAMBARA</h3>
       <div>
         <div className="btn-tabs">
-          <NavLink exact to={"/"}>
+          <NavLink exact to={""}>
             <button className="btn-1">Mois</button>
           </NavLink>
           <NavLink to={"/week"}>
@@ -51,7 +51,8 @@ export default function RankTabs() {
           {/* tabs data */}
           <div>
             <Routes>
-              <Route exact path="/" element={<Rank />}></Route>
+              <Route path="/" element={<Rank />}></Route>
+
               <Route path="/day" element={<Rank />}></Route>
               <Route path="/week" element={<Rank />}></Route>
             </Routes>
