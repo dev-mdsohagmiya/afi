@@ -144,7 +144,7 @@ export default function Navber() {
                   <div className={`lang-manu  text-center  ${langToggle}`}>
                     <div className="">
                       <NavLink
-                        to={"/en"}
+                        to={"/"}
                         className={"link"}
                         onClick={handleEnglish}
                       >
@@ -153,7 +153,7 @@ export default function Navber() {
                     </div>
                     <div>
                       <NavLink
-                        to={"/fr"}
+                        to={"/"}
                         className={"link"}
                         onClick={handleFrench}
                       >
