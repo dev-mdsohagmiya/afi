@@ -10,6 +10,8 @@ import Intro2 from "./path/Intro2";
 import NumberAndDigits from "./path/NumberAndDigits";
 import Presentative from "./path/Presentative";
 import WhatDoYouLike from "./path/WhatDoYouLike";
+import WhatDoYouLike2 from "./path/WhatDoYouLike2";
+import WhatDoYouLike3 from "./path/WhatDoYouLike3";
 export default function FullPath() {
   return (
     <div id="fullpath">
@@ -24,6 +26,8 @@ export default function FullPath() {
         <NumberAndDigits />
         <Presentative />
         <WhatDoYouLike />
+        <WhatDoYouLike2 />
+        <WhatDoYouLike3 />
       </div>
     </div>
   );

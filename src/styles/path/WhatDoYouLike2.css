@@ -1,31 +1,149 @@
-#wdl {
+#wdl2 {
   position: relative;
 }
-#wdl path {
+#wdl2 path {
   fill: red;
 }
 
-#wdl h2 {
+#wdl2 .svg-1 {
   position: absolute;
-  top: 1368px;
-  left: 94px;
-  color: #000;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: capitalize;
-  text-decoration: none;
+  top: 1785px;
+  left: 20px;
 }
 
-#wdl h2 a {
-  text-decoration: none;
-  color: black;
+#wdl2 .svg-2 {
+  position: absolute;
+  top: 1806px;
+  left: 45px;
 }
 
-#wdl .svg-1 {
+#wdl2 .svg-3 {
   position: absolute;
-  top: 1400px;
-  left: 10px;
+  top: 1812px;
+  left: 77px;
+}
+
+#wdl2 .svg-4 {
+  position: absolute;
+  top: 1812px;
+  left: 112px;
+}
+
+#wdl2 .svg-5 {
+  position: absolute;
+  top: 1812px;
+  left: 148px;
+}
+#wdl2 .svg-6 {
+  position: absolute;
+  top: 1812px;
+  left: 180px;
+}
+#wdl2 .svg-7 {
+  position: absolute;
+  top: 1812px;
+  left: 216px;
+}
+
+#wdl2 .svg-8 {
+  position: absolute;
+  top: 1812px;
+  left: 250px;
+}
+
+#wdl2 .svg-9 {
+  position: absolute;
+  top: 1812px;
+  left: 280px;
+}
+
+#wdl2 .svg-10 {
+  position: absolute;
+  top: 1813px;
+  left: 292px;
+}
+
+#wdl2 .svg-11 {
+  position: absolute;
+  top: 1818px;
+  left: 320px;
+}
+
+#wdl2 .svg-12 {
+  position: absolute;
+  top: 1840px;
+  left: 348px;
+}
+
+#wdl2 .svg-13 {
+  position: absolute;
+  top: 1870px;
+  left: 315px;
+}
+
+#wdl2 .svg-14 {
+  position: absolute;
+  top: 1874px;
+  left: 330px;
+}
+
+@media only screen and (max-width: 480px) {
+  #wdl2 .svg-1 {
+    top: 945px;
+    left: 11px;
+  }
+
+  #wdl2 .svg-2 {
+    top: 957px;
+    left: 27px;
+  }
+  #wdl2 .svg-3 {
+    top: 960px;
+    left: 44px;
+  }
+  #wdl2 .svg-4 {
+    top: 960px;
+    left: 64px;
+  }
+  #wdl2 .svg-5 {
+    top: 960px;
+    left: 80px;
+  }
+  #wdl2 .svg-6 {
+    top: 960px;
+    left: 99px;
+  }
+  #wdl2 .svg-7 {
+    top: 960px;
+    left: 119px;
+  }
+
+  #wdl2 .svg-8 {
+    top: 960px;
+    left: 139px;
+  }
+  #wdl2 .svg-9 {
+    top: 960px;
+    left: 152px;
+  }
+  #wdl2 .svg-10 {
+    top: 960px;
+    left: 158px;
+  }
+  #wdl2 .svg-11 {
+    top: 965px;
+    left: 175px;
+  }
+  #wdl2 .svg-12 {
+    top: 975px;
+    left: 188px;
+  }
+  #wdl2 .svg-13 {
+    top: 975px;
+    left: 170px;
+  }
+  #wdl2 .svg-14 {
+    top: 977px;
+    left: 177px;
+  }
 }
