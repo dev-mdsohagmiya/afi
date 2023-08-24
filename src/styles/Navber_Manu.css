@@ -93,14 +93,25 @@
 }
 
 .lang .link {
-  color: white !important;
+  color: white;
   padding: 2px 2px;
-  font-size: 13px;
 }
 
 .lang .pointer {
   cursor: pointer;
 }
+
+/* toogle link */
+.profile .profile-manu .active {
+  color: #df5411 !important;
+}
+.lang .lang-manu .active {
+  color: #df5411 !important;
+}
+.link {
+  font-size: 12px !important;
+}
+
 @media only screen and (max-width: 1399px) {
   .profile {
     transform: translateY(-4px);
@@ -201,14 +212,11 @@
     height: 50px;
   }
   .profile .profile-manu .link {
-    color: white !important;
     padding: 2px 2px;
     font-size: 11px;
   }
   .lang .lang-manu .link {
-    color: white !important;
     padding: 2px 2px;
-    font-size: 11px;
   }
 }
 

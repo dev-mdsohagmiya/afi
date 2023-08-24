@@ -1,11 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
-import { Dropdown, NavLink } from "react-bootstrap";
 
 // import Manu from "./Manu";
 import "../styles/Navber_Manu.css";
 import Manu from "./Manu";
-import { useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 export default function Navber() {
   const [profileToggle, setProfileToggle] = useState("");
@@ -67,24 +66,16 @@ export default function Navber() {
     setLangToggle("");
   };
 
-  const handleDashBoard = () => {
-    navigate("/dashboard");
-  };
-
-  const handleProcess = () => {
-    navigate("/process");
-  };
-  const handleNext = () => {
-    navigate("/logout");
-  };
-
   const handleEnglish = () => {
+    setLangToggle("");
     if (!currentPathname.includes("?lang=en")) {
       navigate(`?lang=en`);
     }
   };
 
   const handleFrench = () => {
+    setLangToggle("");
+
     if (!currentPathname.includes("?lang=fr")) {
       navigate(`?lang=fr`);
     }
@@ -154,8 +145,8 @@ export default function Navber() {
                     <div className="">
                       <NavLink
                         to={"/en"}
+                        className={"link"}
                         onClick={handleEnglish}
-                        className="link"
                       >
                         ENGLISH (ENG)
                       </NavLink>
@@ -163,8 +154,8 @@ export default function Navber() {
                     <div>
                       <NavLink
                         to={"/fr"}
+                        className={"link"}
                         onClick={handleFrench}
-                        className="link"
                       >
                         FRANÇAIS (FR)
                       </NavLink>
@@ -206,20 +197,28 @@ export default function Navber() {
                   >
                     <div className="">
                       <NavLink
-                        to={"/dashboard"}
-                        onClick={handleDashBoard}
-                        className="link"
+                        to="/dashboard"
+                        className="text-white link"
+                        onClick={profileClickHandler}
                       >
                         TABLEAU DE BORD
                       </NavLink>
                     </div>
                     <div>
-                      <NavLink onClick={handleProcess} className="link">
+                      <NavLink
+                        className={"link"}
+                        to={"/process"}
+                        onClick={profileClickHandler}
+                      >
                         PROGRESSION
                       </NavLink>
                     </div>
                     <div>
-                      <NavLink onClick={handleNext} className="link">
+                      <NavLink
+                        className={"link"}
+                        to={"/logout"}
+                        onClick={profileClickHandler}
+                      >
                         SE DÉCONNECTER
                       </NavLink>
                     </div>
