@@ -7,8 +7,9 @@ import {
   Route,
   Router,
   Routes,
+  Outlet,
 } from "react-router-dom";
-import RankDay from "./RankDay";
+import Rank from "./Rank";
 
 export default function RankTabs() {
   const rankuserData = [
@@ -50,11 +51,9 @@ export default function RankTabs() {
           {/* tabs data */}
           <div>
             <Routes>
-              <Route path="/" element={<RankDay />}></Route>
-              <Route path="/day" element={<RankDay />}></Route>
-              <Route path="/week" element={<RankDay />}></Route>
-
-              <Route path="/month" element={<RankDay />}></Route>
+              <Route exact path="/" element={<Rank />}></Route>
+              <Route path="/day" element={<Rank />}></Route>
+              <Route path="/week" element={<Rank />}></Route>
             </Routes>
           </div>
         </div>

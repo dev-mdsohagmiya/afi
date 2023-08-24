@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/path/Greetings.css";
+import "../../styles/FullPath.css";
 export default function Greetings() {
   return (
     <div id="gtns">

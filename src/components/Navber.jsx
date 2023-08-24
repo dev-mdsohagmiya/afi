@@ -79,15 +79,14 @@ export default function Navber() {
   };
 
   const handleEnglish = () => {
-    if (!currentPathname.includes("lang?=en")) {
-      navigate(`/lang?=en`);
+    if (!currentPathname.includes("?lang=en")) {
+      navigate(`?lang=en`);
     }
-    navigate(`$/lang?=en`);
   };
 
   const handleFrench = () => {
-    if (!currentPathname.includes("lang/?=fr")) {
-      navigate(`/lang?=fr`);
+    if (!currentPathname.includes("?lang=fr")) {
+      navigate(`?lang=fr`);
     }
   };
 

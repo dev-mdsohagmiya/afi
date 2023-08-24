@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-bootstrap";
 import "../../styles/path/GiveTNews2.css";
+import "../../styles/FullPath.css";
 
 export default function GiveTNews2() {
   return (
@@ -177,18 +178,20 @@ export default function GiveTNews2() {
         </svg>
       </div>
       <div className="svg-13">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="97"
-          height="91"
-          viewBox="0 0 97 91"
-          fill="none"
-        >
-          <path
-            d="M97 45.5C97 70.629 75.2858 91 48.5 91C21.7142 91 0 70.629 0 45.5C0 20.371 21.7142 0 48.5 0C75.2858 0 97 20.371 97 45.5Z"
-            fill="#D9D9D9"
-          />
-        </svg>
+        <span className="cmt">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="97"
+            height="91"
+            viewBox="0 0 97 91"
+            fill="none"
+          >
+            <path
+              d="M97 45.5C97 70.629 75.2858 91 48.5 91C21.7142 91 0 70.629 0 45.5C0 20.371 21.7142 0 48.5 0C75.2858 0 97 20.371 97 45.5Z"
+              fill="#D9D9D9"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   );

@@ -3,5 +3,28 @@
   width: 400px;
   height: 3000px;
   background-repeat: no-repeat;
-  margin-top: 80px;
+
+  position: relative;
+  margin-top: 130px;
+}
+#fullpath path {
+  fill: red !important;
+}
+@media only screen and (max-width: 480px) {
+  #fullpath .cmt svg {
+    width: 60px;
+  }
+  #fullpath svg {
+    width: 8px;
+  }
+  #fullpath {
+    background: url(/assets/groupline.png);
+    width: 210px;
+    height: 3000px;
+    background-repeat: no-repeat;
+    margin-top: 200px;
+    position: relative;
+    background-size: 100%;
+    margin-top: 220px;
+  }
 }

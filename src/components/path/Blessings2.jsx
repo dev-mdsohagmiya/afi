@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/path/Blessings2.css";
 import { NavLink } from "react-bootstrap";
+import "../../styles/FullPath.css";
 
 export default function Blessings2() {
   return (
@@ -174,7 +175,7 @@ export default function Blessings2() {
         </svg>
       </div>
       <div className="svg-13">
-        <span>
+        <span className="cmt">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="97"

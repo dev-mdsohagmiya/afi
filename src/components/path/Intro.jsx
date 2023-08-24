@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/path/Intro.css";
 import { NavLink } from "react-bootstrap";
+import "../../styles/FullPath.css";
 
 export default function Intro() {
   return (

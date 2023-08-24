@@ -3,7 +3,7 @@
 }
 
 #gt-news path {
-  fill: #000;
+  fill: #df5411;
 }
 
 #gt-news h2 {
@@ -111,4 +111,95 @@
   position: absolute;
   left: -10px;
   top: 250px;
+}
+
+@media only screen and (max-width: 480px) {
+  #gt-news h2 {
+    color: black;
+    position: absolute;
+    top: 45px;
+    left: -24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  #gt-news h2 a {
+    font-size: 13px;
+  }
+  #gt-news .svg-1 {
+    position: absolute;
+    top: 82px;
+    left: 190px;
+  }
+  #gt-news .svg-2 {
+    position: absolute;
+    top: 90px;
+    left: 178px;
+  }
+
+  #gt-news .svg-3 {
+    position: absolute;
+    top: 95px;
+    left: 159px;
+  }
+  #gt-news .svg-4 {
+    position: absolute;
+    top: 95px;
+    left: 142px;
+  }
+  #gt-news .svg-5 {
+    position: absolute;
+    top: 95px;
+    left: 140px;
+  }
+  #gt-news .svg-6 {
+    position: absolute;
+    top: 95px;
+    left: 123px;
+  }
+  #gt-news .svg-7 {
+    position: absolute;
+    top: 95px;
+    left: 103px;
+  }
+  #gt-news .svg-8 {
+    position: absolute;
+    top: 95px;
+    left: 90px;
+  }
+  #gt-news .svg-9 {
+    position: absolute;
+    top: 95px;
+    left: 85px;
+  }
+  #gt-news .svg-10 {
+    position: absolute;
+    top: 95px;
+    left: 67px;
+  }
+  #gt-news .svg-11 {
+    position: absolute;
+    top: 95px;
+    left: 45px;
+  }
+  #gt-news .svg-12 {
+    position: absolute;
+    top: 95px;
+    left: 50px;
+  }
+  #gt-news .svg-13 {
+    position: absolute;
+    top: 99px;
+    left: 28px;
+  }
+  #gt-news .svg-14 {
+    position: absolute;
+    top: 109px;
+    left: 15px;
+  }
+  #gt-news .svg-15 {
+    position: absolute;
+    top: 110px;
+    left: -20px;
+  }
 }

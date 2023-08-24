@@ -1,5 +1,7 @@
 import React from "react";
 import "../../styles/path/GiveTNews.css";
+import "../../styles/FullPath.css";
+
 export default function GiveTNews() {
   return (
     <div id="gt-news">

@@ -3,7 +3,7 @@
 }
 
 #blessings path {
-  fill: #000;
+  fill: #df5411;
 }
 
 #blessings h2 {
@@ -124,4 +124,100 @@
   line-height: normal;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #blessings h2 {
+    position: absolute;
+    top: 245px;
+    left: 85px;
+
+    font-size: 13px;
+  }
+
+  #blessings .svg-1 {
+    position: absolute;
+    top: 510px;
+    left: 380px;
+  }
+  #blessings .svg-1 {
+    position: absolute;
+    top: 266px;
+    left: 200px;
+  }
+  #blessings .svg-2 {
+    position: absolute;
+    top: 280px;
+    left: 193px;
+  }
+
+  #blessings .svg-3 {
+    position: absolute;
+    top: 287px;
+    left: 178px;
+  }
+  #blessings .svg-4 {
+    position: absolute;
+    top: 290px;
+    left: 163px;
+  }
+  #blessings .svg-5 {
+    position: absolute;
+    top: 290px;
+    left: 158px;
+  }
+  #blessings .svg-6 {
+    position: absolute;
+    top: 290px;
+    left: 142px;
+  }
+  #blessings .svg-7 {
+    position: absolute;
+    top: 290px;
+    left: 124px;
+  }
+  #blessings .svg-8 {
+    position: absolute;
+    top: 290px;
+    left: 105px;
+  }
+
+  #blessings .svg-10 {
+    position: absolute;
+    top: 290px;
+    left: 85px;
+  }
+
+  #blessings .svg-11 {
+    position: absolute;
+    top: 290px;
+    left: 68px;
+  }
+  #blessings .svg-12 {
+    position: absolute;
+    top: 290px;
+    left: 48px;
+  }
+  #blessings .svg-13 {
+    position: absolute;
+    top: 293px;
+    left: 30px;
+  }
+  #blessings .svg-14 {
+    position: absolute;
+    top: 305px;
+    left: 16px;
+  }
+  #blessings .svg-15 {
+    position: absolute;
+    top: 305px;
+    left: -15px;
+  }
+  #blessings .ex h2 {
+    position: absolute;
+    top: 38px;
+    left: 66px;
+
+    font-size: 13px;
+  }
 }

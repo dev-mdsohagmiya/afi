@@ -1,5 +1,7 @@
 import React from "react";
 import "../../styles/path/Blessings.css";
+import "../../styles/FullPath.css";
+
 import { NavLink } from "react-bootstrap";
 
 export default function () {

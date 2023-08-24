@@ -90,6 +90,7 @@ export default function RankDay() {
               </div>
             </button>
           </div>
+
           <button className="d-inline-block rf-btn-2 number">
             {result.number}
           </button>
