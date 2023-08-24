@@ -8,6 +8,8 @@ import Blessings2 from "./path/Blessings2";
 import Intro from "./path/Intro";
 import Intro2 from "./path/Intro2";
 import NumberAndDigits from "./path/NumberAndDigits";
+import Presentative from "./path/Presentative";
+import WhatDoYouLike from "./path/WhatDoYouLike";
 export default function FullPath() {
   return (
     <div id="fullpath">
@@ -20,6 +22,8 @@ export default function FullPath() {
         <Intro />
         <Intro2 />
         <NumberAndDigits />
+        <Presentative />
+        <WhatDoYouLike />
       </div>
     </div>
   );

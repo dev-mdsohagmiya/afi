@@ -1,0 +1,31 @@
+#wdl {
+  position: relative;
+}
+#wdl path {
+  fill: red;
+}
+
+#wdl h2 {
+  position: absolute;
+  top: 1368px;
+  left: 94px;
+  color: #000;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#wdl h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+#wdl .svg-1 {
+  position: absolute;
+  top: 1400px;
+  left: 10px;
+}
