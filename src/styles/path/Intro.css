@@ -1,9 +1,9 @@
 #intro {
   position: relative;
 }
-#intro path {
+/* #intro path {
   fill: red;
-}
+} */
 
 #intro h2 {
   position: absolute;

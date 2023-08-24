@@ -1,14 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/path/Greetings.css";
 import "../../styles/FullPath.css";
-export default function Greetings() {
+import { NavLink } from "react-router-dom";
+export default function Greetings(props) {
+  const { done } = props;
+  const [linkColor, setLinkColor] = useState("");
+  const [fillColor1, setFillColor1] = useState("");
+  const [fillColor2, setFillColor2] = useState("");
+  const [fillColor3, setFillColor3] = useState("");
+  const [fillColor4, setFillColor4] = useState("");
+  const [fillColor5, setFillColor5] = useState("");
+  const [fillColor6, setFillColor6] = useState("");
+  const [fillColor7, setFillColor7] = useState("");
+  const [fillColor8, setFillColor8] = useState("");
+  const [fillColor9, setFillColor9] = useState("");
+  const [fillColor10, setFillColor10] = useState("");
+  const [fillColor11, setFillColor11] = useState("");
+  const [fillColor12, setFillColor12] = useState("");
+  if (done) {
+    setTimeout(() => setFillColor1("fill-color"), 50);
+    setTimeout(() => setFillColor2("fill-color"), 100);
+    setTimeout(() => setFillColor3("fill-color"), 150);
+    setTimeout(() => setFillColor4("fill-color"), 200);
+    setTimeout(() => setFillColor5("fill-color"), 250);
+    setTimeout(() => setFillColor6("fill-color"), 300);
+    setTimeout(() => setFillColor7("fill-color"), 400);
+    setTimeout(() => setFillColor8("fill-color"), 350);
+    setTimeout(() => setFillColor9("fill-color"), 400);
+    setTimeout(() => setFillColor10("fill-color"), 450);
+    setTimeout(() => setFillColor11("fill-color"), 500);
+    setTimeout(() => setFillColor12("fill-color"), 550);
+    setTimeout(() => setLinkColor("processh2"), 600);
+  }
+
   return (
     <div id="gtns">
       <div className="gtns-container">
         <h2>
-          <a href="/">Salutations</a>
+          <NavLink className={linkColor}>Salutations</NavLink>
         </h2>
-        <div className="svg-1">
+        <div className={`svg-1 ${fillColor1} `}>
           <span className="cmt">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -17,11 +48,14 @@ export default function Greetings() {
               viewBox="0 0 97 91"
               fill="none"
             >
-              <path d="M97 45.5C97 70.629 75.2858 91 48.5 91C21.7142 91 0 70.629 0 45.5C0 20.371 21.7142 0 48.5 0C75.2858 0 97 20.371 97 45.5Z" />
+              <path
+                d="M97 45.5C97 70.629 75.2858 91 48.5 91C21.7142 91 0 70.629 0 45.5C0 20.371 21.7142 0 48.5 0C75.2858 0 97 20.371 97 45.5Z"
+                fill="#D9D9D9"
+              />
             </svg>
           </span>
         </div>
-        <div className="svg-2">
+        <div className={`svg-2 ${fillColor2}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -32,7 +66,7 @@ export default function Greetings() {
             <path d="M1.38489 0.585965C2.70189 -0.290295 4.47835 0.0668049 5.35358 1.38224C6.2288 2.69768 15.0357 15.9342 15.0357 15.9342C15.9109 17.2496 15.554 19.0261 14.237 19.9024C12.9211 20.778 11.1446 20.4209 10.2694 19.1055L0.587253 4.55351C-0.287972 3.23807 0.0689007 1.46156 1.38489 0.585965Z" />
           </svg>
         </div>
-        <div className="svg-3">
+        <div className={`svg-3 ${fillColor3}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="23"
@@ -46,7 +80,7 @@ export default function Greetings() {
             />
           </svg>
         </div>
-        <div className="svg-4">
+        <div className={`svg-4 ${fillColor4}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -60,7 +94,7 @@ export default function Greetings() {
             />
           </svg>
         </div>
-        <div className="svg-5">
+        <div className={`svg-5 ${fillColor5}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -74,7 +108,7 @@ export default function Greetings() {
             />
           </svg>
         </div>
-        <div className="svg-6">
+        <div className={`svg-6 ${fillColor6}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="15"
@@ -88,7 +122,7 @@ export default function Greetings() {
             />
           </svg>
         </div>
-        <div className="svg-7">
+        <div className={`svg-7 ${fillColor7}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -102,7 +136,7 @@ export default function Greetings() {
             />
           </svg>
         </div>
-        <div className="svg-8">
+        <div className={`svg-8 ${fillColor8}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -116,7 +150,7 @@ export default function Greetings() {
             />
           </svg>
         </div>
-        <div className="svg-9">
+        <div className={`svg-9 ${fillColor9}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -130,7 +164,7 @@ export default function Greetings() {
             />
           </svg>
         </div>
-        <div className="svg-10">
+        <div className={`svg-10 ${fillColor10}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="23"
@@ -144,7 +178,7 @@ export default function Greetings() {
             />
           </svg>
         </div>
-        <div className="svg-11">
+        <div className={`svg-11 ${fillColor11}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"
@@ -158,7 +192,7 @@ export default function Greetings() {
             />
           </svg>
         </div>
-        <div className="svg-12">
+        <div className={`svg-12 ${fillColor12}`}>
           <span className="cmt">
             <svg
               xmlns="http://www.w3.org/2000/svg"

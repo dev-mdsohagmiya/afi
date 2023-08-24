@@ -1,9 +1,9 @@
 #gt-news2 {
   position: relative;
 }
-#gt-news2 path {
+/* #gt-news2 path {
   fill: #df5411;
-}
+} */
 #gt-news2 h2 {
   color: black;
   position: absolute;

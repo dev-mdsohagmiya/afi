@@ -1,9 +1,9 @@
 #wdl2 {
   position: relative;
 }
-#wdl2 path {
+/* #wdl2 path {
   fill: red;
-}
+} */
 
 #wdl2 .svg-1 {
   position: absolute;

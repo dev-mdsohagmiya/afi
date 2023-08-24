@@ -1,9 +1,9 @@
 #ptt {
   position: relative;
 }
-#ptt path {
+/* #ptt path {
   fill: red;
-}
+} */
 
 #ptt h2 {
   position: absolute;

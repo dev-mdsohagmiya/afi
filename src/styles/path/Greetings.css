@@ -2,9 +2,9 @@
   position: relative;
   z-index: 1;
 }
-#gtns path {
+/* #gtns path {
   fill: #df5411;
-}
+} */
 #gtns h2 {
   color: black;
   position: absolute;

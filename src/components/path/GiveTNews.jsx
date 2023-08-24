@@ -1,14 +1,56 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/path/GiveTNews.css";
 import "../../styles/FullPath.css";
+import { NavLink } from "react-router-dom";
 
-export default function GiveTNews() {
+export default function GiveTNews(props) {
+  const { done } = props;
+  const [linkColor, setLinkColor] = useState("");
+  const [fillColor1, setFillColor1] = useState("");
+  const [fillColor2, setFillColor2] = useState("");
+  const [fillColor3, setFillColor3] = useState("");
+  const [fillColor4, setFillColor4] = useState("");
+  const [fillColor5, setFillColor5] = useState("");
+  const [fillColor6, setFillColor6] = useState("");
+  const [fillColor7, setFillColor7] = useState("");
+  const [fillColor8, setFillColor8] = useState("");
+  const [fillColor9, setFillColor9] = useState("");
+  const [fillColor10, setFillColor10] = useState("");
+  const [fillColor11, setFillColor11] = useState("");
+  const [fillColor12, setFillColor12] = useState("");
+  const [fillColor13, setFillColor13] = useState("");
+  const [fillColor14, setFillColor14] = useState("");
+  const [fillColor15, setFillColor15] = useState("");
+
+  const handleFillColor = () => {
+    setTimeout(() => setFillColor1("fill-color"), 600);
+    setTimeout(() => setFillColor2("fill-color"), 650);
+    setTimeout(() => setFillColor3("fill-color"), 700);
+    setTimeout(() => setFillColor4("fill-color"), 750);
+    setTimeout(() => setFillColor5("fill-color"), 800);
+    setTimeout(() => setFillColor6("fill-color"), 850);
+    setTimeout(() => setFillColor7("fill-color"), 900);
+    setTimeout(() => setFillColor8("fill-color"), 950);
+    setTimeout(() => setFillColor9("fill-color"), 1000);
+    setTimeout(() => setFillColor10("fill-color"), 1050);
+    setTimeout(() => setFillColor11("fill-color"), 1100);
+    setTimeout(() => setFillColor12("fill-color"), 1150);
+    setTimeout(() => setFillColor13("fill-color"), 1200);
+    setTimeout(() => setFillColor14("fill-color"), 1250);
+    setTimeout(() => setFillColor15("fill-color"), 1300);
+    setTimeout(() => setLinkColor("processh2"), 1350);
+  };
+
+  if (done) {
+    handleFillColor();
+  }
+
   return (
     <div id="gt-news">
       <h2>
-        <a href="/">Donner et prendre des nouvelles</a>
+        <NavLink className={linkColor}>Donner et prendre des nouvelles</NavLink>
       </h2>
-      <div className="svg-1">
+      <div className={`svg-1 ${fillColor1}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"
@@ -22,7 +64,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-2">
+      <div className={`svg-2 ${fillColor2}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
@@ -36,7 +78,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-3">
+      <div className={`svg-3 ${fillColor3}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -50,7 +92,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-4">
+      <div className={`svg-4 ${fillColor4}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
@@ -64,7 +106,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-5">
+      <div className={`svg-5 ${fillColor5}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
@@ -78,7 +120,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-6">
+      <div className={`svg-6 ${fillColor6}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
@@ -92,7 +134,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-7">
+      <div className={`svg-7 ${fillColor7}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -106,7 +148,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-8">
+      <div className={`svg-8 ${fillColor8}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -120,7 +162,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-9">
+      <div className={`svg-9 ${fillColor9}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="15"
@@ -134,7 +176,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-10">
+      <div className={`svg-10 ${fillColor10}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -148,7 +190,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-11">
+      <div className={`svg-11 ${fillColor11}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -162,7 +204,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-12">
+      <div className={`svg-12 ${fillColor12}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="15"
@@ -176,7 +218,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-13">
+      <div className={`svg-13 ${fillColor13}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
@@ -190,7 +232,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-14">
+      <div className={`svg-14 ${fillColor14}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="19"
@@ -204,7 +246,7 @@ export default function GiveTNews() {
           />
         </svg>
       </div>
-      <div className="svg-15">
+      <div className={`svg-15 ${fillColor15}`}>
         <span className="cmt">
           <svg
             xmlns="http://www.w3.org/2000/svg"

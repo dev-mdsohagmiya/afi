@@ -16,9 +16,9 @@ export default function FullPath() {
   return (
     <div id="fullpath">
       <div>
-        <Greetings />
-        <GiveTNews />
-        <GiveTNews2 />
+        <Greetings done={true} />
+        <GiveTNews done={true} />
+        <GiveTNews2 done={true} />
         <Blessings />
         <Blessings2 />
         <Intro />

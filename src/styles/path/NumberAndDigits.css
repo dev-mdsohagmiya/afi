@@ -1,9 +1,9 @@
 #nad {
   position: relative;
 }
-#nad path {
+/* #nad path {
   fill: red;
-}
+} */
 
 #nad h2 {
   position: absolute;

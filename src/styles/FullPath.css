@@ -1,5 +1,5 @@
+/* background: url(/assets/groupline.png); */
 #fullpath {
-  background: url(/assets/groupline.png);
   width: 400px;
   height: 3000px;
   background-repeat: no-repeat;
@@ -7,9 +7,15 @@
   position: relative;
   margin-top: 130px;
 }
-#fullpath path {
-  fill: red !important;
+
+.fill-color path {
+  fill: #df5411;
 }
+
+.processh2 {
+  color: #df5411 !important;
+}
+
 @media only screen and (max-width: 480px) {
   #fullpath .cmt svg {
     width: 60px;
@@ -18,7 +24,6 @@
     width: 8px;
   }
   #fullpath {
-    background: url(/assets/groupline.png);
     width: 210px;
     height: 3000px;
     background-repeat: no-repeat;
