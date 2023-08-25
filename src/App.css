@@ -38,6 +38,26 @@ body {
   justify-content: center;
 }
 
+.sec-m-process {
+  background-color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.sec-m-lessions {
+  background-color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
 .sec-process {
   border-radius: 50px;
   background-color: white;

@@ -50,7 +50,7 @@ export default function Layout() {
                   <Route
                     path="/dashboard"
                     element={
-                      <section className="sec-lessions">
+                      <section className="sec-m-lessions">
                         <Lessions />
                       </section>
                     }
@@ -58,7 +58,7 @@ export default function Layout() {
                   <Route
                     path="/process"
                     element={
-                      <section className="sec-process">
+                      <section className="sec-m-process">
                         <Process />
                       </section>
                     }
