@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navber from "./components/Navber";
 import Process from "./components/Process";
+
 import "./App.css";
 import {
   BrowserRouter,
