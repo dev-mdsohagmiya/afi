@@ -54,7 +54,7 @@
 
 .profile .profile-toggle {
   width: 170px;
-  height: 100px;
+  height: auto;
   padding: 15px 2px;
   transition: transform ease-in-out 0.5s;
   transform: scale(1.2); /* Scale up on hover */

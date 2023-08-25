@@ -67,18 +67,11 @@ export default function Navber() {
   };
 
   const handleEnglish = () => {
-    setLangToggle("");
-    if (!currentPathname.includes("?lang=en")) {
-      navigate(`?lang=en`);
-    }
+    return "";
   };
 
   const handleFrench = () => {
-    setLangToggle("");
-
-    if (!currentPathname.includes("?lang=fr")) {
-      navigate(`?lang=fr`);
-    }
+    return "";
   };
 
   useEffect(() => {
@@ -143,20 +136,12 @@ export default function Navber() {
                   </div>
                   <div className={`lang-manu  text-center  ${langToggle}`}>
                     <div className="">
-                      <NavLink
-                        to={"/"}
-                        className={"link"}
-                        onClick={handleEnglish}
-                      >
+                      <NavLink className={"link"} onClick={handleEnglish}>
                         ENGLISH (ENG)
                       </NavLink>
                     </div>
                     <div>
-                      <NavLink
-                        to={"/"}
-                        className={"link"}
-                        onClick={handleFrench}
-                      >
+                      <NavLink className={"link"} onClick={handleFrench}>
                         FRANÇAIS (FR)
                       </NavLink>
                     </div>
@@ -198,7 +183,7 @@ export default function Navber() {
                     <div className="">
                       <NavLink
                         to="/dashboard"
-                        className="text-white link"
+                        className="text-white link d-inline-block d-xl-none"
                         onClick={profileClickHandler}
                       >
                         TABLEAU DE BORD
@@ -206,7 +191,7 @@ export default function Navber() {
                     </div>
                     <div>
                       <NavLink
-                        className={"link"}
+                        className={"link d-inline-block d-xl-none"}
                         to={"/process"}
                         onClick={profileClickHandler}
                       >
@@ -215,8 +200,8 @@ export default function Navber() {
                     </div>
                     <div>
                       <NavLink
-                        className={"link"}
-                        to={"/logout"}
+                        className={"link "}
+                        to={""}
                         onClick={profileClickHandler}
                       >
                         SE DÉCONNECTER
