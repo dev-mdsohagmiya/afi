@@ -34,7 +34,7 @@ export default function GiveTNews2(props) {
     setTimeout(() => setFillColor11("fill-color"), delay + 550);
     setTimeout(() => setFillColor12("fill-color"), delay + 600);
     setTimeout(() => setFillColor13("fill-color"), delay + 650);
-    setTimeout(() => setLinkColor("processh2"), 700);
+    setTimeout(() => setLinkColor("processh2"), delay + 700);
   };
 
   if (done) {

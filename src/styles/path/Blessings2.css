@@ -89,6 +89,7 @@
     position: absolute;
     top: 360px;
     left: 8px;
+    display: none;
   }
 
   #blessings2 .svg-2 {
