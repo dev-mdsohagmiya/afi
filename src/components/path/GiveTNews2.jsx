@@ -4,6 +4,7 @@ import "../../styles/path/GiveTNews2.css";
 import "../../styles/FullPath.css";
 export default function GiveTNews2(props) {
   const { done } = props;
+  const delay = 1350;
   const [linkColor, setLinkColor] = useState("");
   const [fillColor1, setFillColor1] = useState("");
   const [fillColor2, setFillColor2] = useState("");
@@ -20,20 +21,20 @@ export default function GiveTNews2(props) {
   const [fillColor13, setFillColor13] = useState("");
 
   const handleFillColor = () => {
-    setTimeout(() => setFillColor1("fill-color"), 1400);
-    setTimeout(() => setFillColor2("fill-color"), 1450);
-    setTimeout(() => setFillColor3("fill-color"), 1500);
-    setTimeout(() => setFillColor4("fill-color"), 1550);
-    setTimeout(() => setFillColor5("fill-color"), 1600);
-    setTimeout(() => setFillColor6("fill-color"), 1650);
-    setTimeout(() => setFillColor7("fill-color"), 1700);
-    setTimeout(() => setFillColor8("fill-color"), 1750);
-    setTimeout(() => setFillColor9("fill-color"), 1800);
-    setTimeout(() => setFillColor10("fill-color"), 1850);
-    setTimeout(() => setFillColor11("fill-color"), 1900);
-    setTimeout(() => setFillColor12("fill-color"), 1950);
-    setTimeout(() => setFillColor13("fill-color"), 2000);
-    setTimeout(() => setLinkColor("processh2"), 2050);
+    setTimeout(() => setFillColor1("fill-color"), delay + 50);
+    setTimeout(() => setFillColor2("fill-color"), delay + 100);
+    setTimeout(() => setFillColor3("fill-color"), delay + 150);
+    setTimeout(() => setFillColor4("fill-color"), delay + 200);
+    setTimeout(() => setFillColor5("fill-color"), delay + 250);
+    setTimeout(() => setFillColor6("fill-color"), delay + 300);
+    setTimeout(() => setFillColor7("fill-color"), delay + 350);
+    setTimeout(() => setFillColor8("fill-color"), delay + 400);
+    setTimeout(() => setFillColor9("fill-color"), delay + 450);
+    setTimeout(() => setFillColor10("fill-color"), delay + 500);
+    setTimeout(() => setFillColor11("fill-color"), delay + 550);
+    setTimeout(() => setFillColor12("fill-color"), delay + 600);
+    setTimeout(() => setFillColor13("fill-color"), delay + 650);
+    setTimeout(() => setLinkColor("processh2"), 700);
   };
 
   if (done) {

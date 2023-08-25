@@ -1,16 +1,58 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/path/Blessings.css";
 import "../../styles/FullPath.css";
 
 import { NavLink } from "react-bootstrap";
 
-export default function () {
+export default function (props) {
+  const { done } = props;
+  const delay = 2050;
+  const [linkColor, setLinkColor] = useState("");
+  const [fillColor1, setFillColor1] = useState("");
+  const [fillColor2, setFillColor2] = useState("");
+  const [fillColor3, setFillColor3] = useState("");
+  const [fillColor4, setFillColor4] = useState("");
+  const [fillColor5, setFillColor5] = useState("");
+  const [fillColor6, setFillColor6] = useState("");
+  const [fillColor7, setFillColor7] = useState("");
+  const [fillColor8, setFillColor8] = useState("");
+  const [fillColor9, setFillColor9] = useState("");
+  const [fillColor10, setFillColor10] = useState("");
+  const [fillColor11, setFillColor11] = useState("");
+  const [fillColor12, setFillColor12] = useState("");
+  const [fillColor13, setFillColor13] = useState("");
+  const [fillColor14, setFillColor14] = useState("");
+  const [fillColor15, setFillColor15] = useState("");
+
+  const handleFillColor = () => {
+    setTimeout(() => setFillColor1("fill-color"), delay + 50);
+    setTimeout(() => setFillColor2("fill-color"), delay + 100);
+    setTimeout(() => setFillColor3("fill-color"), delay + 150);
+    setTimeout(() => setFillColor4("fill-color"), delay + 200);
+    setTimeout(() => setFillColor5("fill-color"), delay + 250);
+    setTimeout(() => setFillColor6("fill-color"), delay + 300);
+    setTimeout(() => setFillColor7("fill-color"), delay + 350);
+    setTimeout(() => setFillColor8("fill-color"), delay + 400);
+    setTimeout(() => setFillColor9("fill-color"), delay + 450);
+    setTimeout(() => setFillColor10("fill-color"), delay + 500);
+    setTimeout(() => setFillColor11("fill-color"), delay + 550);
+    setTimeout(() => setFillColor12("fill-color"), delay + 600);
+    setTimeout(() => setFillColor13("fill-color"), delay + 650);
+    setTimeout(() => setFillColor14("fill-color"), delay + 750);
+    setTimeout(() => setFillColor15("fill-color"), delay + 750);
+    setTimeout(() => setLinkColor("processh2"), delay + 800);
+  };
+
+  if (done) {
+    handleFillColor();
+  }
+
   return (
     <div id="blessings">
       <h2>
-        <NavLink>Bennedictions</NavLink>
+        <NavLink className={linkColor}>Bennedictions</NavLink>
       </h2>
-      <div className="svg-1">
+      <div className={`svg-1  ${fillColor1}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="13"
@@ -24,7 +66,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-2">
+      <div className={`svg-2 ${fillColor2}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"
@@ -38,7 +80,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-3">
+      <div className={`svg-3 ${fillColor3}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
@@ -52,7 +94,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-4">
+      <div className={`svg-4 ${fillColor4}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -66,7 +108,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-5">
+      <div className={`svg-5 ${fillColor5}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="15"
@@ -80,7 +122,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-6">
+      <div className={`svg-6 ${fillColor6}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -94,7 +136,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-7">
+      <div className={`svg-7 ${fillColor7}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -108,7 +150,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-8">
+      <div className={`svg-8 ${fillColor8}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -122,7 +164,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-10">
+      <div className={`svg-10 ${fillColor9}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -136,7 +178,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-11">
+      <div className={`svg-11 ${fillColor10}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -150,7 +192,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-12">
+      <div className={`svg-12 ${fillColor12}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -164,7 +206,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-13">
+      <div className={`svg-13 ${fillColor13}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="23"
@@ -178,7 +220,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-14">
+      <div className={`svg-14 ${fillColor14}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="19"
@@ -192,7 +234,7 @@ export default function () {
           />
         </svg>
       </div>
-      <div className="svg-15">
+      <div className={`svg-15 ${fillColor15}`}>
         <span className="cmt">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -209,7 +251,7 @@ export default function () {
         </span>
         <div className="ex">
           <h2>
-            <NavLink>Bennedictions</NavLink>
+            <NavLink className={linkColor}>Bennedictions</NavLink>
           </h2>
         </div>
       </div>

@@ -1,12 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/path/Blessings2.css";
 import { NavLink } from "react-bootstrap";
 import "../../styles/FullPath.css";
 
-export default function Blessings2() {
+export default function Blessings2(props) {
+  const { done } = props;
+  const delay = 2750;
+  const [linkColor, setLinkColor] = useState("");
+  const [fillColor1, setFillColor1] = useState("");
+  const [fillColor2, setFillColor2] = useState("");
+  const [fillColor3, setFillColor3] = useState("");
+  const [fillColor4, setFillColor4] = useState("");
+  const [fillColor5, setFillColor5] = useState("");
+  const [fillColor6, setFillColor6] = useState("");
+  const [fillColor7, setFillColor7] = useState("");
+  const [fillColor8, setFillColor8] = useState("");
+  const [fillColor9, setFillColor9] = useState("");
+  const [fillColor10, setFillColor10] = useState("");
+  const [fillColor11, setFillColor11] = useState("");
+  const [fillColor12, setFillColor12] = useState("");
+  const [fillColor13, setFillColor13] = useState("");
+
+  const handleFillColor = () => {
+    setTimeout(() => setFillColor1("fill-color"), delay + 50);
+    setTimeout(() => setFillColor2("fill-color"), delay + 100);
+    setTimeout(() => setFillColor3("fill-color"), delay + 150);
+    setTimeout(() => setFillColor4("fill-color"), delay + 200);
+    setTimeout(() => setFillColor5("fill-color"), delay + 250);
+    setTimeout(() => setFillColor6("fill-color"), delay + 300);
+    setTimeout(() => setFillColor7("fill-color"), delay + 350);
+    setTimeout(() => setFillColor8("fill-color"), delay + 400);
+    setTimeout(() => setFillColor9("fill-color"), delay + 450);
+    setTimeout(() => setFillColor10("fill-color"), delay + 500);
+    setTimeout(() => setFillColor11("fill-color"), delay + 550);
+    setTimeout(() => setFillColor12("fill-color"), delay + 600);
+    setTimeout(() => setFillColor13("fill-color"), delay + 650);
+    setTimeout(() => setLinkColor("processh2"), delay + 800);
+  };
+
+  if (done) {
+    handleFillColor();
+  }
+
   return (
     <div id="blessings2">
-      <div className="svg-1">
+      <div className={`svg-1 ${fillColor1}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="13"
@@ -20,7 +58,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-2">
+      <div className={`svg-2 ${fillColor2}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"
@@ -34,7 +72,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-3">
+      <div className={`svg-3 ${fillColor3}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
@@ -48,7 +86,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-4">
+      <div className={`svg-4 ${fillColor4}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
@@ -62,7 +100,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-5">
+      <div className={`svg-5 ${fillColor5}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
@@ -76,7 +114,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-6">
+      <div className={`svg-6 ${fillColor6}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -90,7 +128,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-7">
+      <div className={`svg-7 ${fillColor7}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -104,7 +142,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-8">
+      <div className={`svg-8 ${fillColor8}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -118,7 +156,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-9">
+      <div className={`svg-9 ${fillColor9}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -132,7 +170,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-10">
+      <div className={`svg-10 ${fillColor10}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -146,7 +184,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-11">
+      <div className={`svg-11 ${fillColor11}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="23"
@@ -160,7 +198,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-12">
+      <div className={`svg-12 ${fillColor12}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"
@@ -174,7 +212,7 @@ export default function Blessings2() {
           />
         </svg>
       </div>
-      <div className="svg-13">
+      <div className={`svg-13 ${fillColor13}`}>
         <span className="cmt">
           <svg
             xmlns="http://www.w3.org/2000/svg"

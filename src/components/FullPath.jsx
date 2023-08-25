@@ -19,7 +19,7 @@ export default function FullPath() {
         <Greetings done={true} />
         <GiveTNews done={true} />
         <GiveTNews2 done={true} />
-        <Blessings />
+        <Blessings done={true} />
         <Blessings2 />
         <Intro />
         <Intro2 />
