@@ -96,7 +96,7 @@
   left: 335px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
   #gt-news2 h2 {
     top: 150px;
     left: 45px;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navber from "./components/Navber";
 import Process from "./components/Process";
-import FullPath from "./components/FullPath";
+import "./App.css";
 import {
   BrowserRouter,
   Outlet,
@@ -9,24 +9,34 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
+import Lessions from "./components/Lessions";
 
 export default function Layout() {
   return (
     <BrowserRouter>
-      <div>
+      <div id="layout">
         <div>
-          <div>
+          <section className="sec-nav">
             <Navber />
-          </div>
+          </section>
 
           <div className=" container">
             <div className="d-none d-xl-block">
-              <div className="row mt-4">
-                <div className="col-xl-6 d-flex justify-content-center">
-                  <FullPath />
+              <div className="row mt-4   ">
+                <div className="col-6 col-xl-8 d-flex justify-content-center position-relative">
+                  <section className="sec-lessions d-flex justify-content-center">
+                    <div className="col-card">
+                      <Lessions />
+                    </div>
+                  </section>
                 </div>
-                <div className="col-xl-6 d-flex justify-content-end">
-                  <Process />
+
+                <div className="col-6 col-xl-4 d-flex justify-content-end">
+                  <section className="sec-process ">
+                    <div className="col-card">
+                      <Process />
+                    </div>
+                  </section>
                 </div>
               </div>
             </div>
@@ -37,8 +47,22 @@ export default function Layout() {
                   <Route path="/week" element={<Process />}></Route>
                   <Route path="/month" element={<Process />}></Route>
 
-                  <Route path="/dashboard" element={<FullPath />}></Route>
-                  <Route path="/process" element={<Process />}></Route>
+                  <Route
+                    path="/dashboard"
+                    element={
+                      <section className="sec-lessions">
+                        <Lessions />
+                      </section>
+                    }
+                  ></Route>
+                  <Route
+                    path="/process"
+                    element={
+                      <section className="sec-process">
+                        <Process />
+                      </section>
+                    }
+                  ></Route>
                 </Routes>
               </div>
             </div>

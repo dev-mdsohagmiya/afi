@@ -6,7 +6,7 @@
   position: relative;
 }
 #process .div-lavel-box {
-  z-index: -10;
+  z-index: 10;
   position: relative;
 }
 #process h3 {
@@ -76,7 +76,7 @@
     padding: 20px 30px;
     border-radius: 44px;
     width: 400px;
-    margin-top: 145px;
+    margin-top: 55px;
   }
   #process-p {
     margin-top: 120px;

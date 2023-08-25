@@ -86,12 +86,12 @@ export default function Navber() {
 
   return (
     <div ref={outerContainerRef} className="navber">
-      <div className="container   py-1 py-xl-4 ">
+      <div className="container    py-1 ">
         <div className="row ">
           <div className="col-1">
             <img className="logo" src="/assets/logo.svg" alt="Logo" />
           </div>
-          <div className="col-11  justify-content-end d-flex   ">
+          <div className="col-11 justify-content-end justify-content-xl-center d-flex   ">
             <ul className="nav-list">
               <li className="d-inline-block d-none d-xl-inline-block">
                 <a href="/"> MES COURS</a>
@@ -106,7 +106,7 @@ export default function Navber() {
                 <a href="/">AIDECOURS EN DIRECT</a>
               </li>
               <li className="d-inline-block d-none d-xl-inline-block">
-                <a href="/">COURS EN DIRECT</a>
+                <a href="/">TARIFS</a>
               </li>
               <li className="d-inline-block d-none d-xl-inline-block">
                 <a href="/">AIDE</a>

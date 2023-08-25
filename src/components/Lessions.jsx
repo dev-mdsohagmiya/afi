@@ -12,14 +12,14 @@ import Presentative from "./path/Presentative";
 import WhatDoYouLike from "./path/WhatDoYouLike";
 import WhatDoYouLike2 from "./path/WhatDoYouLike2";
 import WhatDoYouLike3 from "./path/WhatDoYouLike3";
-export default function FullPath() {
+export default function Lessions() {
   return (
     <div id="fullpath">
       <div>
-        <Greetings done={true} />
-        <GiveTNews done={true} />
-        <GiveTNews2 done={true} />
-        <Blessings done={true} />
+        <Greetings done={false} />
+        <GiveTNews done={false} />
+        <GiveTNews2 done={false} />
+        <Blessings done={false} />
         <Blessings2 />
         <Intro />
         <Intro2 />

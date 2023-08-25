@@ -105,7 +105,7 @@
   left: -15px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
   #nad h2 {
     top: 630px;
     left: 52px;

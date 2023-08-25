@@ -38,13 +38,16 @@ export default function Manu(props) {
             </li>
             <hr />
             <li className="">
-              <a href="/">AIDECOURS</a>
+              <a href="/">AIDECOURS EN DIRECT </a>
             </li>
             <hr />
             <li className="">
-              <a href="/">EN DIRECTCOURS</a>
+              <a href="/">TARIFS</a>
             </li>
-            <li>DIRECTAIDE</li>
+            <hr />
+            <li className="">
+              <a href="/">AIDE</a>
+            </li>
           </ul>
         </div>
       </div>

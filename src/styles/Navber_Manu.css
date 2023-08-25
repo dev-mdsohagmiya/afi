@@ -1,3 +1,14 @@
+.navber {
+  position: fixed;
+  top: 0px;
+  z-index: 20;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  display: flex;
+}
+
 .nav-list {
   margin-top: 30px;
   font-weight: 600 !important;
@@ -6,13 +17,14 @@
   margin-left: 30px;
   list-style: none;
   font-weight: 600 !important;
+  margin-left: 45px;
 }
 
 .nav-list li a {
   text-decoration: none;
   color: #1e1e1e;
   font-weight: 600 !important;
-  font-size: 15px;
+  font-size: 22px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -21,20 +33,22 @@
   width: 90px;
 }
 .lang img {
-  width: 47px;
+  width: 417px;
   height: 42px;
   cursor: pointer;
 }
-.profile {
-  cursor: pointer;
+
+.lang {
+  transform: translateY(-2px);
 }
 .profile span {
-  transform: translateX(-10px);
+  transform: translate(-10px, -1px);
   display: inline-block;
 }
 
 .profile {
   position: relative;
+  cursor: pointer;
 }
 .profile .profile-manu {
   background-color: #1e1e1e;
@@ -82,6 +96,7 @@
   height: 0;
   transition: transform ease-in-out 0.5s;
   transform: scale(0.5); /* Initial state */
+  z-index: 999;
 }
 
 .lang .lang-toggle {
@@ -128,6 +143,45 @@
     font-size: 15px;
     font-family: "Poppins", sans-serif;
   }
+  /* 
+  fdfdf */
+  .lang {
+    transform: translate(12px, -2px);
+  }
+  .profile span {
+    transform: translate(-10px, 1px);
+    display: inline-block;
+  }
+  .nav-list li {
+    list-style: none;
+    font-weight: 600 !important;
+    margin-left: 25px;
+  }
+
+  .nav-list li a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 600 !important;
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .profile {
+    transform: translate(10px, -21px);
+  }
+  .lang {
+    transform: translate(20px, -20px);
+  }
+  #toggle-btn {
+    border: 1px solid black;
+    padding: 2px 2px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-18px);
+  }
 }
 @media only screen and (max-width: 991px) {
   .nav-list li {
@@ -166,14 +220,14 @@
 }
 .manu-toggle {
   background-color: #1e1e1e;
-  width: 80%;
+  width: 90%;
   align-items: center;
   overflow: hidden;
   transform: translateX(-100%);
   transition: transform ease-in-out 0.5s;
-  position: fixed;
   top: 0px;
   height: 100vh;
+  position: absolute;
 }
 @media only screen and (max-width: 1199px) {
   .manu-ber {
@@ -181,13 +235,6 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .navber {
-    position: fixed;
-    top: 0px;
-    z-index: 100;
-    background-color: rgb(233, 233, 233);
-    width: 100%;
-  }
   .lang .flag {
     height: 37px;
     width: 32px;
@@ -210,6 +257,7 @@
     cursor: pointer;
     width: 50px;
     height: 50px;
+    margin-top: 30px;
   }
   .profile .profile-manu .link {
     padding: 2px 2px;
@@ -217,6 +265,20 @@
   }
   .lang .lang-manu .link {
     padding: 2px 2px;
+  }
+  .profile {
+    transform: translate(10px, -9px);
+  }
+  .lang {
+    transform: translate(10px, -9px);
+  }
+  #toggle-btn {
+    border: 1px solid black;
+    padding: 2px 2px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transform: translateY(-18px);
   }
 }
 
