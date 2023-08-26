@@ -44,10 +44,6 @@ export default function Layout() {
             <div className="d-block d-xl-none">
               <div className="d-flex justify-content-center">
                 <Routes>
-                  <Route path="/" element={<Process />}></Route>
-                  <Route path="/week" element={<Process />}></Route>
-                  <Route path="/month" element={<Process />}></Route>
-
                   <Route
                     path="/dashboard"
                     element={
@@ -58,6 +54,14 @@ export default function Layout() {
                   ></Route>
                   <Route
                     path="/process"
+                    element={
+                      <section className="sec-m-process">
+                        <Process />
+                      </section>
+                    }
+                  ></Route>
+                  <Route
+                    path="/"
                     element={
                       <section className="sec-m-process">
                         <Process />
