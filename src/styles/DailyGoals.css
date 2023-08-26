@@ -67,12 +67,22 @@
   background-color: white;
 }
 
-/* f */
+#d-goals .ranking .active button {
+  color: white;
+  background-color: #df5411;
+}
 
+#d-goals .ranking .btn-tabs {
+  margin-top: 32px;
+}
+#d-goals .ranking .r-box {
+  margin-top: 70px;
+}
 #d-goals .rank-1 button {
   margin-top: 30px;
   border-radius: 0;
-  width: 230px;
+  width: 200px;
+  padding: 5px 15px;
   color: #592113;
   font-family: "Montserrat", "sans-serif";
   font-size: 15.449px;
@@ -138,10 +148,10 @@
     width: 100%;
     color: #592113;
   }
-}
-
-@media only screen and (max-width: 385px) {
-  #d-goals .btn-tabs button {
+  #d-goals .btn-tab button {
     width: 31%;
+  }
+  #d-goals .rank-1 button {
+    width: 200px;
   }
 }

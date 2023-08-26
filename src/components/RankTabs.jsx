@@ -162,37 +162,33 @@ export default function RankTabs() {
   return (
     <div className="ranking">
       <h3>Classement de la semaine EN BAMBARA</h3>
-      <div>
-        <div className="btn-tab">
-          <div className="row">
-            <div className="col-xl-4 w-full">
-              <span className={activeD} onClick={DailyRank}>
-                <button className="">Mois</button>
-              </span>
-            </div>
-            <div className="col-xl-4">
-              <span onClick={WeeklyRank} className={activeW}>
-                <button className="  ">semaine</button>
-              </span>
-            </div>
-            <div className="col-xl-4">
-              <span onClick={MonthlyRank} className={activeM}>
-                <button className="">Jours</button>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
+      <div className="r-box">
         <div>
-          {/* rank data */}
-          <div>
-            <Ranking rankuserData={rankuserData} />
+          <div className="btn-tab">
+            <span className={activeD} onClick={DailyRank}>
+              <button className="">Mois</button>
+            </span>
+
+            <span onClick={WeeklyRank} className={activeW}>
+              <button className="  ">semaine</button>
+            </span>
+
+            <span onClick={MonthlyRank} className={activeM}>
+              <button className="">Jours</button>
+            </span>
           </div>
         </div>
+        <div>
+          <div>
+            {/* rank data */}
+            <div>
+              <Ranking rankuserData={rankuserData} />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
       </div>
-      <br />
-      <br />
     </div>
   );
 }
