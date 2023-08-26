@@ -22,7 +22,7 @@ export default function Lessions() {
     <div id="fullpath">
       <div>
         <div className="lsvg-1">
-          <NavLink className={"lession-link"}>
+          <NavLink className={"lession-link"} to={"/lession/gretting"}>
             <div className="div">
               <span className="cmt">
                 <svg

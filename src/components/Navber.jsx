@@ -91,7 +91,10 @@ export default function Navber() {
       <div className="container    py-1 ">
         <div className="row ">
           <div className="col-1">
-            <img className="logo" src="/assets/logo.svg" alt="Logo" />
+            <NavLink to={"/"}>
+              {" "}
+              <img className="logo" src="/assets/logo.svg" alt="Logo" />
+            </NavLink>
           </div>
           <div className="col-11 justify-content-end justify-content-xl-center d-flex   ">
             <ul className="nav-list">

@@ -11,6 +11,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import Lessions from "./components/Lessions";
+import GrettingLession from "./components/GrettingLession";
+import LearnGrettingLession from "./components/LearnGrettingLession";
 
 export default function Layout() {
   return (
@@ -22,22 +24,46 @@ export default function Layout() {
           </section>
 
           <div className=" container">
+            <Routes>
+              <Route
+                path="/lession/gretting"
+                element={<GrettingLession />}
+              ></Route>
+              <Route
+                path="/lession/gretting/learn"
+                element={<LearnGrettingLession />}
+              ></Route>
+            </Routes>
             <div className="d-none d-xl-block">
               <div className="row mt-4   ">
                 <div className="col-6 col-xl-8 d-flex justify-content-center position-relative">
-                  <section className="sec-lessions d-flex justify-content-center">
-                    <div className="col-card">
-                      <Lessions />
-                    </div>
-                  </section>
+                  <Routes>
+                    <Route
+                      path="/"
+                      element={
+                        <section className="sec-lessions d-flex justify-content-center">
+                          <div className="col-card">
+                            <Lessions />
+                          </div>
+                        </section>
+                      }
+                    ></Route>
+                  </Routes>
                 </div>
 
                 <div className="col-6 col-xl-4 d-flex justify-content-end">
-                  <section className="sec-process ">
-                    <div className="col-card">
-                      <Process />
-                    </div>
-                  </section>
+                  <Routes>
+                    <Route
+                      path="/"
+                      element={
+                        <section className="sec-process ">
+                          <div className="col-card">
+                            <Process />
+                          </div>
+                        </section>
+                      }
+                    ></Route>
+                  </Routes>
                 </div>
               </div>
             </div>
