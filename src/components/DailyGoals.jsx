@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/DailyGoals.css";
 import RankTabs from "./RankTabs";
+import { useSelector } from "react-redux";
 export default function DailyGoals() {
+  const { lavel, point, ciwara } = useSelector((state) => state);
+
   return (
     <div id="d-goals">
       <div>
@@ -28,7 +31,7 @@ export default function DailyGoals() {
                   <img className="" src="/assets/ppdille2.svg" alt="" />
                 </div>
                 <div>
-                  <small>14 CIWARA</small>{" "}
+                  <small>{ciwara} CIWARA</small>{" "}
                 </div>
               </div>
               <div>
@@ -38,7 +41,7 @@ export default function DailyGoals() {
                 <div>
                   <img src="" alt="" />
                   <div>
-                    <small>14 pieces</small>
+                    <small>{point} pieces</small>
                   </div>
                 </div>
               </div>

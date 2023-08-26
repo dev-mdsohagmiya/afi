@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Lessions.css";
 import { NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  bonusPointIncrement,
+  lessionIncrement,
+} from "../services/actions/lessionActions";
 
 export default function Lessions() {
+  const changeLessionState = useDispatch();
+
+  useEffect(() => {
+    //completed lessions
+    changeLessionState(lessionIncrement(53));
+
+    // bonus points
+    changeLessionState(bonusPointIncrement(9));
+  }, []);
+
   return (
     <div id="fullpath">
       <div>
