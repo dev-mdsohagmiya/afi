@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
-// import Manu from "./Manu";
 import "../styles/Navber_Manu.css";
 import Manu from "./Manu";
 import { Link, NavLink, useNavigate } from "react-router-dom";
@@ -12,6 +11,7 @@ export default function Navber() {
   const navigate = useNavigate();
   const currentPathname = window.location.pathname;
   const [toggle, setToggle] = useState("");
+  //
   const handleToggle = () => {
     setToggle("toggler-class");
     if (toggle === "toggler-class") {
@@ -21,10 +21,12 @@ export default function Navber() {
     setLangToggle("");
   };
 
+  //
   const onToggleData = (data) => {
     setToggle(data);
   };
 
+  //
   const profileClickHandler = () => {
     console.log("profile card");
     if (langToggle === "lang-toggle") {
@@ -36,7 +38,7 @@ export default function Navber() {
       setProfileToggle("profile-toggle");
     }
   };
-
+  //
   const langClickHandler = () => {
     console.log("lang");
     if (profileToggle === "profile-toggle") {

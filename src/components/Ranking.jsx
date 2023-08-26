@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Ranking(props) {
+export default function RankUsers(props) {
   const { rankuserData } = props;
   return (
     <div>

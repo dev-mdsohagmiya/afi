@@ -140,6 +140,7 @@ export default function RankTabs() {
     setActiveM("");
     // active css class end
     setRankUserData(dailyRankData);
+    console.log("daily");
   };
   const WeeklyRank = () => {
     //active css class start
@@ -155,23 +156,31 @@ export default function RankTabs() {
     setActiveW("");
     setActiveM("active");
     // active css class end
-    setActiveClass("");
+
     setRankUserData(monthlyRankData);
   };
   return (
     <div className="ranking">
       <h3>Classement de la semaine EN BAMBARA</h3>
       <div>
-        <div className="btn-tabs">
-          <span className={activeD} onClick={DailyRank}>
-            <button className="btn-1">Mois</button>
-          </span>
-          <span onClick={WeeklyRank} className={activeW}>
-            <button className="btn-2  mx-2 mx-xxl-4">semaine</button>
-          </span>
-          <span onClick={MonthlyRank} className={activeM}>
-            <button className="btn-3">Jours</button>
-          </span>
+        <div className="btn-tab">
+          <div className="row">
+            <div className="col-xl-4 w-full">
+              <span className={activeD} onClick={DailyRank}>
+                <button className="">Mois</button>
+              </span>
+            </div>
+            <div className="col-xl-4">
+              <span onClick={WeeklyRank} className={activeW}>
+                <button className="  ">semaine</button>
+              </span>
+            </div>
+            <div className="col-xl-4">
+              <span onClick={MonthlyRank} className={activeM}>
+                <button className="">Jours</button>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
       <div>

@@ -31,7 +31,7 @@ body {
   background-color: white;
 
   width: 98%;
-  border-radius: 50px;
+  border-radius: 30px;
   position: absolute;
   height: 2400px;
   display: flex;
@@ -56,7 +56,7 @@ body {
 }
 
 .sec-process {
-  border-radius: 50px;
+  border-radius: 30px;
   background-color: white;
 }
 

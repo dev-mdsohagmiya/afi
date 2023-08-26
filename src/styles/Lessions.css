@@ -200,11 +200,21 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .lsvg-2 .lession-link div h2 {
+    white-space: pre-wrap;
+    width: 200px;
+    right: 10px;
+  }
+  .lsvg-3 .lession-link div h2 {
+    white-space: pre-wrap;
+    width: 200px;
+    right: 10px;
+  }
   .lession-link div {
     transition: ease-in-out 0.3s;
   }
   .lession-link:hover div {
-    transform: scale(1.1);
+    transform: scale(1.4);
     transition: ease-in-out 0.3;
   }
 
@@ -312,14 +322,14 @@
    /* link */
   .lsvg-11 {
     position: absolute;
-    top: 1073px;
-    left: -18px;
+    top: 1082px;
+    left: -10px;
   }
   /* link */
   .lsvg-12 {
     position: absolute;
-    top: 1082px;
-    left: -10px;
+    top: 1072px;
+    left: -20px;
   }
   .lsvg-13 {
     position: absolute;
@@ -331,12 +341,13 @@
     top: 1198px;
     right: -27px;
   }
-  /* link */
-  .lsvg-11 {
+
+  .lsvg-15 {
     position: absolute;
     top: 1310px;
-    left: -18px;
+    right: -27px;
   }
+
   /* end */
 
   .lession-link div h2 {
