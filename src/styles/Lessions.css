@@ -200,6 +200,14 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .lession-link div {
+    transition: ease-in-out 0.3s;
+  }
+  .lession-link:hover div {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3;
+  }
+
   /* link */
   .lsvg-2 {
     position: absolute;

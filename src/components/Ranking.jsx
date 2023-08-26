@@ -1,24 +1,7 @@
 import React from "react";
 
-export default function RankDay() {
-  const rankuserData = [
-    {
-      id: 1,
-      name: "ROSIE762",
-      number: "2700",
-    },
-    ,
-    {
-      id: 2,
-      name: "ROSIE762",
-      number: "2700",
-    },
-    {
-      id: 3,
-      name: "ROSIE762",
-      number: "2700",
-    },
-  ];
+export default function Ranking(props) {
+  const { rankuserData } = props;
   return (
     <div>
       {rankuserData.map((result) => (
